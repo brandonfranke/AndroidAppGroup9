@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.createCandProfile">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Create Candidate Profile"
+            android:id="@+id/textViewTitle"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/editTextCandidateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Enter candidate name"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:hint="Enter candidate description"
+            android:inputType="textMultiLine"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/buttonCreateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Create Profile" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
